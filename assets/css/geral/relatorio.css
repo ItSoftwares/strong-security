@@ -1,0 +1,157 @@
+*:not(i) {
+  font-family: encode sans !important; }
+
+body {
+  background: var(--cor4);
+  padding: 10px 0;
+  box-sizing: border-box;
+  height: unset !important;
+  overflow: visible !important; }
+  body > canvas {
+    margin: auto;
+    display: block; }
+
+#container, .pagina {
+  width: 190mm;
+  background: white;
+  margin: 0 auto 20px;
+  padding: 10mm; }
+
+hr.separador {
+  border-top: 1px dashed rgba(0, 0, 0, 0.3);
+  margin: 20px 0; }
+
+canvas {
+  background: white; }
+
+header {
+  background-color: var(--cor1);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white; }
+  header #logo {
+    width: 110px;
+    padding: 3px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 2px; }
+  header div {
+    text-align: right; }
+    header div span {
+      font-size: .8em;
+      display: block; }
+
+#container, .pagina {
+  margin-top: 20px; }
+  #container > h1, .pagina > h1 {
+    text-transform: uppercase;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 1.5em; }
+  #container > p, .pagina > p {
+    text-align: justify; }
+  #container #grafico-radar, .pagina #grafico-radar {
+    height: 400px;
+    margin: auto;
+    display: block; }
+  #container #tabelas, .pagina #tabelas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px; }
+    #container #tabelas table, .pagina #tabelas table {
+      width: 48%; }
+  #container #pontuacao, .pagina #pontuacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    #container #pontuacao canvas#grafico-linha-media-respostas, .pagina #pontuacao canvas#grafico-linha-media-respostas {
+      width: 100%; }
+  #container #sem-voucher, .pagina #sem-voucher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0; }
+    #container #sem-voucher i, .pagina #sem-voucher i {
+      font-size: 5em;
+      color: var(--cor2);
+      margin-bottom: 20px; }
+    #container #sem-voucher h3, .pagina #sem-voucher h3 {
+      text-align: center; }
+  #container > h3, .pagina > h3 {
+    text-transform: uppercase;
+    padding: 20px 20px;
+    text-align: center;
+    display: table;
+    margin: 0 auto 20px;
+    position: relative; }
+    #container > h3 span, .pagina > h3 span {
+      background: white;
+      position: relative;
+      padding: 0 20px; }
+    #container > h3:before, .pagina > h3:before {
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      width: 700px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 50%;
+      z-index: 0; }
+  #container .pergunta, .pagina .pergunta {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    list-style: none; }
+    #container .pergunta h4, .pagina .pergunta h4 {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+      position: relative; }
+      #container .pergunta h4 span, .pagina .pergunta h4 span {
+        position: absolute;
+        right: 101%;
+        top: 0;
+        font-size: .7em;
+        color: white;
+        background: var(--cor1);
+        min-width: 23px;
+        height: 23px;
+        display: flex;
+        border-radius: 3px;
+        justify-content: center;
+        align-items: center; }
+    #container .pergunta .descricao, .pagina .pergunta .descricao {
+      text-align: justify;
+      margin-bottom: 10px; }
+    #container .pergunta table, .pagina .pergunta table {
+      width: unset; }
+  #container > h2, .pagina > h2 {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: normal; }
+
+footer h3 {
+  margin-bottom: 10px;
+  text-align: center; }
+
+#loading {
+  background: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+  #loading img {
+    width: 70px;
+    display: block;
+    margin-bottom: 50px; }
+
+/*# sourceMappingURL=relatorio.css.map */

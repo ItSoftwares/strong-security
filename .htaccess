@@ -1,0 +1,31 @@
+RewriteEngine On
+#RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# ========== usuário
+
+RewriteRule ^acesso?$ login_cadastro.php
+RewriteRule ^inicio?$ views/empresa/index.php
+RewriteRule ^pesquisas?$ views/empresa/pesquisas.php
+RewriteRule ^responder-questionario?$ views/empresa/pesquisa.php
+RewriteRule ^perfil?$ views/empresa/perfil.php
+RewriteRule ^meus_resultados?$ views/empresa/resultados.php
+
+# ========== ADM
+
+RewriteRule ^adm/login?$ views/adm/index.php
+RewriteRule ^adm/dashboard?$ views/adm/dashboard.php
+RewriteRule ^adm/empresas?$ views/adm/empresas.php
+RewriteRule ^adm/pesquisas?$ views/adm/pesquisas.php
+RewriteRule ^adm/preview?$ views/adm/preview.php
+RewriteRule ^adm/vouchers?$ views/adm/vouchers.php
+
+
+# ========== GERAL
+
+RewriteRule ^sair?$ php/util/sair.php
+
+RewriteRule ^relatorio.html?$ views/relatorio.php
+RewriteRule ^relatorio?$ views/relatorio.php

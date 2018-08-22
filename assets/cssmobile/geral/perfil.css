@@ -1,0 +1,43 @@
+@import url('../geral/dashboard.css');
+
+.input {
+	margin-bottom: 15px;
+}
+
+#foto {
+    justify-content: space-around !important;
+}
+
+#foto > div {
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    border-radius: 3px;
+    width: 150px;
+    height: 150px;
+    background: #b8b8b8;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+#foto img {
+    width: 100%;
+    display: block;
+}
+
+#foto input {
+    display: none;
+}
+
+#foto label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    background: rgba(0,0,0,.4);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}

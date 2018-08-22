@@ -1,0 +1,28 @@
+#centro {
+  display: block !important; }
+
+#pesquisar {
+  display: flex;
+  justify-content: space-between; }
+
+.voucher {
+  padding: 3px 10px;
+  display: inline-block;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: .9em; }
+  .voucher.nao-possui {
+    background: var(--cor2); }
+  .voucher.solicitado {
+    background: var(--amarelo);
+    color: black; }
+  .voucher.autorizado {
+    background: var(--verde); }
+  .voucher.negado {
+    background: var(--vermelho); }
+
+#detalhes {
+  justify-content: unset !important; }
+
+/*# sourceMappingURL=empresas.css.map */

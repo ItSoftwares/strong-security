@@ -1,0 +1,129 @@
+*:not(i) {
+  font-family: encode sans !important; }
+
+body {
+  background: var(--cor4);
+  padding: 10px 0;
+  box-sizing: border-box;
+  height: unset !important;
+  overflow: visible !important; }
+
+#container {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  box-sizing: border-box; }
+  #container hr.separador {
+    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+    margin: 20px 0; }
+  #container header {
+    background-color: var(--cor1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white; }
+    #container header #logo {
+      width: 50px; }
+    #container header div {
+      text-align: right; }
+      #container header div span {
+        font-size: .8em;
+        display: block; }
+  #container article {
+    margin-top: 20px; }
+    #container article > h1 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      text-align: center; }
+    #container article > p {
+      text-align: justify; }
+    #container article #grafico-radar {
+      height: 400px;
+      margin: auto;
+      display: block; }
+    #container article #tabelas {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px; }
+      #container article #tabelas table {
+        width: 48%; }
+    #container article #pontuacao {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #container article #pontuacao canvas#grafico-linha-media-respostas {
+        width: 100%; }
+    #container article #sem-voucher {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 0; }
+      #container article #sem-voucher i {
+        font-size: 5em;
+        color: var(--cor2);
+        margin-bottom: 20px; }
+      #container article #sem-voucher h3 {
+        text-align: center; }
+    #container article .grupo {
+      list-style: none; }
+      #container article .grupo > h3 {
+        text-transform: uppercase;
+        padding: 20px 20px;
+        text-align: center;
+        display: table;
+        margin: 0 auto 20px;
+        position: relative; }
+        #container article .grupo > h3 span {
+          background: white;
+          position: relative;
+          padding: 0 20px; }
+        #container article .grupo > h3:before {
+          content: '';
+          position: absolute;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          width: 700px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          top: 50%;
+          z-index: 0; }
+      #container article .grupo .pergunta {
+        padding-left: 30px;
+        margin-bottom: 20px; }
+        #container article .grupo .pergunta h4 {
+          margin-bottom: 5px;
+          font-size: 1.2em;
+          position: relative; }
+          #container article .grupo .pergunta h4 span {
+            position: absolute;
+            right: 101%;
+            top: 0;
+            font-size: .7em;
+            color: white;
+            background: var(--cor1);
+            min-width: 23px;
+            height: 23px;
+            display: flex;
+            border-radius: 3px;
+            justify-content: center;
+            align-items: center; }
+        #container article .grupo .pergunta .descricao {
+          text-align: justify;
+          margin-bottom: 10px; }
+        #container article .grupo .pergunta table {
+          width: unset; }
+      #container article .grupo > h2 {
+        text-align: right;
+        font-size: 1.2em;
+        font-weight: normal; }
+  #container footer h3 {
+    margin-bottom: 10px;
+    text-align: center; }
+
+/*# sourceMappingURL=relatorio.css.map */
